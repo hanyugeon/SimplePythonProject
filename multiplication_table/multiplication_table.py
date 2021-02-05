@@ -1,60 +1,14 @@
 # 구구단 결과를 불러오는 함수를 적는다.
 # import를 활용하여 index.py 에 호출시킬것.
-# 함수는 총 9가지가 될 것이다. (1 부터 9 까지)
-# 빠르게 만들고 더 효율적인 방법이 있는지 고려해보기
+# 자주일어나는 일은 간단 명료하게.
 
-def one(number):
-    print('%d 단 출력.' % (number))
-    for i in range(1, 10):
-        print('%d x %d' % (number, i))
+def multiply(n):
+    while n < 1 or n > 9:
+        print('오류 : 1과 9 사이의 숫자를 입력하세요')
+        n = int(input('구구단을 외자~ (숫자입력) :'))
+    for m in range(1, 10):
+        print('%d x %d = %d' % (n, m, n * m))
 
-
-def two(number):
-    print('%d 단 출력.' % (number))
-    for i in range(1, 10):
-        print('%d x %d' % (number, i))
-
-
-def three(number):
-    print('%d 단 출력.' % (number))
-    for i in range(1, 10):
-        print('%d x %d' % (number, i))
-
-
-def four(number):
-    print('%d 단 출력.' % (number))
-    for i in range(1, 10):
-        print('%d x %d' % (number, i))
-
-
-def five(number):
-    print('%d 단 출력.' % (number))
-    for i in range(1, 10):
-        print('%d x %d' % (number, i))
-
-
-def six(number):
-    print('%d 단 출력.' % (number))
-    for i in range(1, 10):
-        print('%d x %d' % (number, i))
-
-
-def seven(number):
-    print('%d 단 출력.' % (number))
-    for i in range(1, 10):
-        print('%d x %d' % (number, i))
-
-
-def eight(number):
-    print('%d 단 출력.' % (number))
-    for i in range(1, 10):
-        print('%d x %d' % (number, i))
-
-
-def nine(number):
-    print('%d 단 출력.' % (number))
-    for i in range(1, 10):
-        print('%d x %d' % (number, i))
 
 # def main():
 #     print("Testing mt.one function")
